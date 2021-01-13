@@ -30,7 +30,6 @@ h6 {
   margin: 0 auto;
 }
 .header {
-  max-width: 1440px;
   max-height: 660px;
   background: url(../img/header-1440.png) no-repeat 100% 100%;
   background-color: #F4F6F9;
@@ -79,10 +78,9 @@ h6 {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/*mobile*/
 @media (max-width: 1120px) {
   .header {
-    background: linear-gradient(90deg, #ffffff 30%, rgba(255, 255, 255, 0)), url(../img/header-1440.png) no-repeat 100% 100%;
+    background: linear-gradient(90deg, #f4f6f9 30%, rgba(244, 246, 249, 0)), url(../img/header-1440.png) no-repeat 100% 100%;
     background-color: #F4F6F9;
   }
 }

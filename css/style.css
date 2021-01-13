@@ -31,7 +31,7 @@ h6 {
 }
 .header {
   max-height: 660px;
-  background: url(../img/header-1440.png) no-repeat 100% 100%;
+  background: url(../img/header/header-1440.png) no-repeat 100% 100%;
   background-color: #F4F6F9;
   margin: 0 auto;
 }
@@ -80,7 +80,7 @@ h6 {
 }
 @media (max-width: 1120px) {
   .header {
-    background: linear-gradient(90deg, #f4f6f9 30%, rgba(244, 246, 249, 0)), url(../img/header-1440.png) no-repeat 100% 100%;
+    background: linear-gradient(90deg, #f4f6f9 30%, rgba(244, 246, 249, 0)), url(../img/header/header-1440.png) no-repeat 100% 100%;
     background-color: #F4F6F9;
   }
 }

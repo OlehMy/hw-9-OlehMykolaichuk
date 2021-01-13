@@ -1,0 +1,104 @@
+//main: ../style.less
+
+.header {
+    max-width: 1440px;
+    max-height: 660px;
+    background: url(../img/header-1440.png) no-repeat 100% 100%;
+    background-color: @white2;
+    margin: 0 auto;   
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 8.2rem;
+}
+
+.header__title {
+    margin: 0;
+    font-family: Lato;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-bottom: 1.5rem;
+    color: @black;
+    width: 50%;
+}
+
+.header__subtitle {
+    font-family: Lato;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 2.5rem;
+    color: @gray;
+    width: 41%;
+}
+
+.header__buttons {
+    display: flex;
+    column-gap: 10%;
+    width: 35%;
+}
+
+.header__buttons img {
+    max-width: 157px;
+    
+    transition: transform .2s linear;
+
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+     }
+}
+
+/*mobile*/
+@media (max-width: 1120px) {
+
+    .header {
+        background: linear-gradient(90deg, fade(@white, 100%) 30%, fade(@white, 0%)), url(../img/header-1440.png) no-repeat 100% 100%;
+        background-color: @white2;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .header {
+        background: none;
+        background-color: @white2;
+    }
+
+    .header__wrapper {
+        justify-content: center;
+        padding-top: 1.7rem;
+        padding-bottom: 3rem;        
+    }
+    
+    .header__title {
+        font-size: 1.5rem;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header__subtitle {
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header__buttons {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        column-gap: 5%;
+    }
+
+}

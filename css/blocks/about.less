@@ -1,0 +1,139 @@
+//main: ../style.less
+
+.about {
+    height: 592px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, fade(@white, 0%), fade(@white, 100%) 50%) 100% 100%, url(../img/about/about-bg-1440.png) left no-repeat;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about__img {
+    display: flex;
+    position: relative;
+    width: 460px;
+    height: 400px;
+    margin-top: 5.5rem;    
+}
+
+.about__img-card {
+    position: absolute;    
+    z-index: 1;
+    max-width: 360px;
+
+}
+
+.about__img-player {
+    position: absolute;
+    max-width: 360px;
+    bottom: 0;
+    right: 0;
+}
+
+.about__text {
+    flex-basis: 40%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.2rem;
+    padding-top: 6.5rem;
+}
+
+.about__text-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.05rem;
+    text-align: left;
+    color: @blue2;
+}
+
+.about__text-subtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.85rem;
+    text-align: left;
+    color: @black;
+}
+
+.about__text-date {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.15rem;
+    text-align: left;
+    color: @gray;
+}
+
+.about__text-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.05rem;
+    text-align: left;
+    color: @blue2;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 992px) {
+
+    .about__text {
+        flex-basis: 30%;
+        padding-top: 3rem;
+        row-gap: 0.9rem;
+    }
+
+}
+
+@media (max-width: 720px) {
+   
+    .about {
+        height: 800px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, fade(@white, 100%) 40%, fade(@white, 0%)) 100% 100%, url(../img/about/about-bg-1440.png) bottom;
+    }
+
+    .about__wrapper {
+        justify-content: center;
+    }
+
+    .about__img {
+        order: 1;        
+        width: 320px;
+        height: 280px;
+        margin-top: 3.5rem;
+    }
+
+    .about__text {
+        flex-basis: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1.2rem;
+        padding-top: 2.7rem;
+    }
+
+    .about__text-title,
+    .about__text-subtitle,
+    .about__text-date,
+    .about__text-link {
+        text-align: center;
+    }
+        
+}
+
+@media (max-width: 360px) {
+
+    .about {
+        height: 856px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, fade(@white, 100%) 54%, fade(@white, 0%)) 100% 100%, url(../img/about/about-bg-360.png) bottom no-repeat;
+    }
+
+}

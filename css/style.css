@@ -565,7 +565,7 @@ h6 {
 }
 @media (min-width: 1441px) {
   .reviews__conteiner {
-    column-gap: 6%;
+    column-gap: 8%;
   }
 }
 @media (max-width: 720px) {

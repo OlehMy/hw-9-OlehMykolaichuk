@@ -1,0 +1,129 @@
+//main: ../style.less
+
+.offer {
+    max-height: max-content;
+    background: url(../img/offer/offer-bg.png) no-repeat;
+    background-size: contain;    
+    //background-color: @white2;
+    margin: 0 auto;   
+}
+
+.offer__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: flex-end;
+}
+
+.offer__title {
+    margin: 0;
+    font-family: Lato;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.85rem;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-bottom: 1.5rem;
+    color: @black;
+    width: 40%;
+}
+
+.offer__subtitle {
+    font-family: Lato;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 2.5rem;
+    color: @gray;
+    width: 40%;
+}
+
+.offer__buttons {
+    display: flex;    
+    column-gap: 5%;
+    width: 40%;
+    justify-content: flex-start;
+}
+
+.offer__buttons img {
+    max-width: 157px;
+    
+    transition: transform .2s linear;
+
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+     }
+}
+
+
+@media (max-width: 1120px) {
+
+    .offer {
+        background: linear-gradient(270deg, fade(@white, 100%) 45%, fade(@white, 0%)), url(../img/offer/offer-bg.png) no-repeat;
+        background-color: @white2;        
+    }
+
+    .offer__wrapper {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .offer__title,
+    .offer__subtitle,
+    .offer__buttons {
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 720px) {
+
+    .offer {
+        height: 800px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, fade(@white, 100%) 40%, fade(@white, 0%)) 100% 100%, url(../img/offer/offer-bg.png) bottom no-repeat;
+    }
+
+    .offer__wrapper {
+        justify-content: center;
+        padding-top: 1.7rem;
+        padding-bottom: 3rem;        
+    }
+    
+    .offer__title {
+        font-size: 1.5rem;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .offer__subtitle {
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .offer__buttons {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        column-gap: 3%;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .offer {
+        height: 690px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, fade(@white, 100%) 54%, fade(@white, 0%)) 100% 100%, url(../img/offer/offer-bg-360.png) bottom no-repeat;
+    }
+
+}

@@ -50,7 +50,26 @@
     font-weight: 700;
     line-height: 1.05rem;
     text-align: left;
-    color: @blue2;    
+    color: @blue2;
+    position: relative;
+    display: inline-block;
+    width: fit-content;    
+}
+
+.interface__text-link:after {
+    position: absolute;
+    left: 50%;
+    content: '';    
+    height: 2px;
+    background: @blue2;
+    transition: all 0.3s linear;
+    width: 0;
+    bottom: -2px;   
+}
+
+.interface__text-link:hover:after {
+    width: 100%;
+    margin-left: -50%;                
 }
 
 @media (max-width: 992px) {
@@ -91,9 +110,12 @@
 
     .interface__text-title,
     .interface__text-subtitle,
-    .interface__text-date,
-    .interface__text-link {
+    .interface__text-date {
         text-align: center;
+    }
+
+    .interface__text-link {
+        margin: auto;
     }
         
 }

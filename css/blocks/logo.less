@@ -6,6 +6,10 @@
     padding-bottom: 6.6rem;
 }
 
+.logo-footer {
+    padding: 0;
+}
+
 .logo__text {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
@@ -16,11 +20,46 @@
     padding-left: 0.05rem;    
 }
 
+.logo__text .white {
+    color: @white;
+}
+
+.logo__img {
+    @keyframes bounce {
+        0%, 20%, 60%, 100% {
+            transform: translateY(0);
+            transform: translateY(0);
+        }
+    
+        40% {
+            transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    
+        80% {
+            transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+    }       
+
+    &:hover {
+        -webkit-animation: bounce 1s;;
+        -ms-animation: bounce 1s;;
+        animation: bounce 1s;
+    }
+}
+
+
 /*mobile*/
 @media (max-width: 720px) {
     
     .logo {
         justify-content: center;
         padding-bottom: 4.3rem;
+    }
+
+    .logo-footer {
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
     }
 }

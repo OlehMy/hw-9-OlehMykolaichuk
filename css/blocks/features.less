@@ -34,12 +34,22 @@
     min-width: 10rem;    
 }
 
+.features__date svg {
+    transition: transform .2s linear;       
+
+    &:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
 .features__date-text {
     font-family: Lato;
     font-size: 0.8rem;    
     font-weight: 400;
     line-height: 1.15rem;
-    letter-spacing: 0.03rem;  
+    letter-spacing: 0.015rem;  
     color: @white;
     padding-top: 0.5rem;
 }

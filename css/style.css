@@ -806,8 +806,8 @@ h6 {
   }
   .footer__nav ul {
     flex-wrap: wrap;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 0.8rem;
+    row-gap: 0.8rem;
   }
   .social__link {
     padding-bottom: 1.5rem;
